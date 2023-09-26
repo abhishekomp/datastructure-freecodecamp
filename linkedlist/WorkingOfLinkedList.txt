@@ -1,0 +1,15 @@
+It should have the following characteristics:
+1. Should have a node that contains some data.
+2. Linked list should know about its head node.
+
+It should provide following functionalities:
+1. It should be possible to add new data(at the head) to the linked list ****Done****
+2. It should be able to insert data at particular index ****Done****
+3. It should be able to search data in the list ****Done****
+4. It should return a node from a specified index ****Done****
+5. It should remove the head element ****Done****####****UnitTestDone****
+6. It should remove an element from a specified index ****Done****####****5 UnitTestDone****
+7. It should provide an iterator to iterate upon
+8. It should provide the length of the list ****Done****####****UnitTestDone****
+9. It should be possible to know if the list is empty ****Done****####****UnitTestDone****
+10. It should return the head data ****Done****####****UnitTestDone****
