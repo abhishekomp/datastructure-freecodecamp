@@ -170,6 +170,24 @@ class TestMyLinkedList(unittest.TestCase):
     expected_node_data = 10
     self.assertEqual(node.data, expected_node_data)
 
+  #To run: python test_myLinkedList.py TestMyLinkedList.test_getNodeAtIndex_for_negative_index_should_return_error
+  def test_getNodeAtIndex_for_negative_index_should_return_error(self):
+    wanted_index = 1
+    l = SinglyLinkedList()
+    l.add(10)
+    l.add(50)
+    self.assertRaises(ValueError, l.node_at_index, wanted_index)
+
+  #To run: python test_myLinkedList.py TestMyLinkedList.test_getNodeAtIndex_for_negative_index_should_return_error_using_CM
+  #CM:Context Manager
+  def test_getNodeAtIndex_for_negative_index_should_return_error_using_CM(self):
+    wanted_index = -1
+    l = SinglyLinkedList()
+    l.add(10)
+    l.add(50)
+    with self.assertRaises(ValueError):
+      l.node_at_index(wanted_index)
+
   def test_insertAt_should_add_a_new_node_at_index_zero(self):
     l = SinglyLinkedList()
     l.add(10)

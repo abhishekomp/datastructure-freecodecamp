@@ -85,6 +85,8 @@ class SinglyLinkedList:
        Returns the node at specified index
        Return None if index is invalid for the specified list
        """
+       if index < 0:
+          raise ValueError('Index cannot be negative')
        if self.is_empty() or index >= len(self):
           return None
        else:
